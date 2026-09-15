@@ -10,26 +10,32 @@
   body {
     background-color: lightgray;
   }
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" /link>
   </style>
   <!-- how come the background on the body is not working? -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First web page</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js".></script>
   </head>
   <body>
-    <div class="container-fluid"</div>
-    <div class="myDiv"
-    <h1>Colorado Water Restrictions</h1>
-  </div>
-    <div class="alert alert-info"/div>
-      <--! after adding the alert box the background changed colors what happened? -->
+    <div id="nav-placeholder"></div>
+    <div class="container"></div>
+    
+
+      <h1>Colorado Water Restrictions</h1>
+    <div class="alert alert-info"></div>
+      <!-- after adding the alert box the background changed colors what happened? -->
     <p style="text-align: center;">As of 08/26/2026 Denver has stated no spray irrigation after Sept. 30th 2026. Below is a link to Denver water restrictions.</p>
     <p style="text-align: center;"><a href="https://www.denverwater.org/residential/rebates-and-conservation-tips/summer-watering-rules">Current watering guidelines and restrictions</a></p>
     <h2 style="color: black; background-color: lightblue; text-align: center;"> How did Denver water make this decision?</h2>
 <p style="text-align: center;"> Because of record low snow pack for the 2025-2026 snow season, record low rain fall throughout the summer, and customers failing to conserve enough water Denver has made the hard decision to end the current watering season early. This restriction is effect until Denver Water votes to end it. From early reports Denver water will not vote again until the spring of 2027.</p>
 <!-- Check for updated restrictions monthly. Denver has stated that the restriction is indefinite until voted on in the future.-->
 <img src="https://yardandgarden.extension.iastate.edu/files/2025-06/Watering%20ban%20by%20west%20AdobeStock_371887035%20%281%29.jpg" alt="Sprinkler" style="width:700px;height:500px; margin: auto; display: block;"/img>
-
-  </body>
+<img src="images/savewater.png" alt="Save Water" style="width:700px;height:500px; margin: auto; display: block;"/>
+  </div>
+<script>
+        $("#nav-placeholder").load("navbar.html #site-nav");
+        </script>  
+</body>
 </html>
